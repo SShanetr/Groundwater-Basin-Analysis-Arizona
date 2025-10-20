@@ -2,6 +2,7 @@
 R Script for analyzing long-term demographic, agricultural, and groundwater trends across Arizona. Includes century-scale population data, agricultural land valuation, and well data from 2 groundwater basins. The code emphasizes clean workflows, reproducible analysis, and modular structure for mapping, visualization, and statistical exploration.
 
 **Overview**
+
 This repository contains the initial examination of groundwater basins in Arizona, with a focus on population growth, agricultural land values, and well data across Cochise, Graham, and Mohave Counties. The project aims to identify patterns of groundwater overdraft and budget deficits in key basins and lay the foundation for further geospatial and hydrologic analysis. 
 
 **Focus Areas**
