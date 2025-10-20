@@ -9,16 +9,13 @@ library(viridis) # viz - color
 library(tidyr)
 
 
-# ── Import historical county census shape files ──
-# Each file represents county boundaries and census attributes for a given year
-
-cnty_1900 <- st_read("Data/us_county_1900/US_county_1900.shp")
-cnty_1920 <- st_read("Data/us_county_1920/US_county_1920.shp")
-cnty_1950 <- st_read("Data/us_county_1950/US_county_1950.shp")
-cnty_1970 <- st_read("Data/us_county_1970/US_county_1970.shp")
-cnty_1980 <- st_read("Data/us_county_1980/US_county_1980.shp")
-cnty_2000 <- st_read("Data/us_county_2000/US_county_2000.shp")
-cnty_2020 <- st_read("Data/us_county_2020/US_county_2020.shp")
+cnty_1900 <- st_read("Data/AZ_county_1900/AZ_county_1900.shp")
+cnty_1920 <- st_read("Data/AZ_county_1920/AZ_county_1920.shp")
+cnty_1950 <- st_read("Data/AZ_county_1950/AZ_county_1950.shp")
+cnty_1970 <- st_read("Data/AZ_county_1970/AZ_county_1970.shp")
+cnty_1980 <- st_read("Data/AZ_county_1980/AZ_county_1980.shp")
+cnty_2000 <- st_read("Data/AZ_county_2000/AZ_county_2000.shp")
+cnty_2020 <- st_read("Data/AZ_county_2020/AZ_county_2020.shp")
 # ── Import Arizona groundwater basin shapefile 
 gwb_2024 <- st_read("Data/AZ_groundwater_subbasin_24/ADWR_Groundwater_Subbasin_2024.shp")
 
@@ -33,15 +30,6 @@ names(cnty_2020)
 unique(cnty_1900$STATENAM)
 cnty_1900 <- cnty_1900 %>%
   mutate(STATENAM = ifelse(STATENAM == "Arizona Territory", "Arizona", STATENAM))
-
-## now we can extract Arizona
-az_1900 <- cnty_1900 %>% filter(STATENAM == "Arizona")
-az_1920 <- cnty_1920 %>% filter(STATENAM == "Arizona")
-az_1950 <- cnty_1950 %>% filter(STATENAM == "Arizona")
-az_1970 <- cnty_1970 %>% filter(STATENAM == "Arizona")
-az_1980 <- cnty_1980 %>% filter(STATENAM == "Arizona")
-az_2000 <- cnty_2000 %>% filter(STATENAM == "Arizona")
-az_2020 <- cnty_2020 %>% filter(STATEFP == "04")
 
 ## Add STATENAM column to spatial layer ──
 # Ensures compatibility for left joins with population data
@@ -466,3 +454,4 @@ pop_dens1 <- ggplot(az_all_density) +
     caption = "CRS: NAD83 / UTM Zone 12N\nData source: IPUMS USA, University of Minnesota, www.ipums.org."
   )
 pop_dens1
+
