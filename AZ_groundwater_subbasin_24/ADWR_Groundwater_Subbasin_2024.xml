@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <title>Map</title>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>According to ARS 45-402(34) &amp;quot;Subbasin&amp;quot; means an area which, as nearly as known facts permit as determined by the director pursuant to this chapter, may be designated so as to enclose a relatively hydrologically distinct body of groundwater within a groundwater basin, which shall be described horizontally by surface description.Not for use at scales greater than 1:100000.</abstract>
+            <purpose>This feature contains groundwater Sub-basin boundaries and provide base information for use in GIS systems to aid in assessment for a variety of planning and analysis purposes and to provide a geographic view with corresponding data. These data do not represent a legal record.
+
+Displayed across ADWR GIS applications. </purpose>
+        </descript>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>adwrsde1</themekey>
+                <themekey>AMA</themekey>
+                <themekey>Sub-Basin</themekey>
+                <themekey>Groundwater</themekey>
+                <themekey>LIB.subbasin</themekey>
+                <themekey>Arizona</themekey>
+                <themekey>Hydrogeology</themekey>
+                <themekey>Hydrology</themekey>
+                <themekey>Subbasin</themekey>
+                <themekey>Well Registry Application</themekey>
+                <themekey>Assured and Adequate Water Supply application</themekey>
+                <themekey>Community Water System Application</themekey>
+                <themekey>Grandfathered Water Rights application</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>Please refer to ADWR Data Disclosure.</useconst>
+        <datacred>Arizona Department of Water Resources</datacred>
+    </idinfo>
+    <metainfo>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
